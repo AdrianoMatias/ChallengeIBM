@@ -4468,11 +4468,6 @@ tbody.collapse.show {
   flex-direction: column;
 }
 
-.card-deck .card {
-  margin-bottom: 15px;
-  margin-top: 40px;
-}
-
 @media (min-width: 576px) {
   .card-deck {
     -webkit-box-orient: horizontal;

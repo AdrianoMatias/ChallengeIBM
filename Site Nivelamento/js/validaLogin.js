@@ -23,4 +23,4 @@ function valida(campo) {
       form.senha.id = "success"
     }
   }
-}
+};

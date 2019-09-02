@@ -5,10 +5,12 @@ function valida(campo) {
     senha = form.senha.value;
 
   if (campo == "nome") {
-    if (nome == "") {
+    if ((nome == "") || (form.nome.value.length < 3)) {
+      //alert('Preencha o campo com seu nome');
       form.nome.id = "error"
       form.nome.focus();
       return false;
+
 
     } else {
       form.nome.id = "success"
@@ -16,6 +18,7 @@ function valida(campo) {
   }
   if (campo == "email") {
     if (email == "") {
+      //alert('Preencha o campo com seu email');
       form.email.id = "error"
       form.email.focus();
       return false;
@@ -26,14 +29,14 @@ function valida(campo) {
   }
 
   if (campo == "rm"){
-      if((rm == "") || (form.rm.value.length < 5)) {
-        form.rm.id = "error"
-        form.rm.focus();
-        return false;
-      }else{
-        form.rm.id = "success"
-      }
+    if ((rm == "")|| (form.rm.value.length < 5)) {
+      form.rm.id = "error"
+      form.rm.focus();
+      return false;
+    }else{
+      form.rm.id = "success"
     }
+  }
 
 
   if (campo == "senha") {
@@ -48,24 +51,29 @@ function valida(campo) {
   }
 };
 
-  // Validação de email
+// Validação de email
 
-  function validacaoEmail(field) {
-    usuario = field.value.substring(0, field.value.indexOf("@"));
-    dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
+function validacaoEmail(field) {
+  usuario = field.value.substring(0, field.value.indexOf("@"));
+  dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
 
-    if ( (usuario.length >= 1) &&
-        (dominio.length >= 3) &&
-        (usuario.search("@") == -1) &&
-        (dominio.search("@") == -1) &&
-        (usuario.search(" ") == -1) &&
-        (dominio.search(" ") == -1) &&
-        (dominio.search(".") != -1) &&
-        (dominio.indexOf(".") >= 1) &&
-        (dominio.lastIndexOf(".") < dominio.length - 1) ) {
+  if ( (usuario.length >= 1) &&
+      (dominio.length >= 3) &&
+      (usuario.search("@") == -1) &&
+      (dominio.search("@") == -1) &&
+      (usuario.search(" ") == -1) &&
+      (dominio.search(" ") == -1) &&
+      (dominio.search(".") != -1) &&
+      (dominio.indexOf(".") >= 1) &&
+      (dominio.lastIndexOf(".") < dominio.length - 1) ) {
+    //document.getElementById("msgemail").innerHTML = "E-mail válido";
 
-    } else {
-      form.email.id = "error"
-      form.email.focus();
-    }
-  };
+
+  } else {
+
+    //document.getElementById("msgemail").innerHTML = "<font color='red'>E-mail inválido </font>";
+    //alert("E-mail invalido");
+    form.email.id = "error"
+    form.email.focus();
+  }
+}

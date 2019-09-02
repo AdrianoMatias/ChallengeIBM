@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+.espaco {
+  margin-left: 50px;
+}
 /* --------------------------------------------------------------- */
 
 .logo{
@@ -20,7 +22,9 @@ footer{
   background-color: #4D495B;
   clear: both;
   width: 100%;
-  height: 60px;
+  height: 50px;
+  bottom: 0;
+  position: absolute;
   margin-top: 30px;
 }
 
@@ -54,55 +58,23 @@ footer p{
     margin: 10px auto;
   }
 
-  @media(max-width: 415px){
-    footer{
-      background-color: #4D495B;
-      clear: both;
-      width: 100%;
-      height: 60px;
-      margin-top: 125px;
+  @media(max-width: 576px) {
+    #carouselExampleControls{
+      display: none;
     }
 
-    @media(max-width: 412px){
+    .card-deck{
+      margin-top: 80px;
+    }
+
+    @media(max-width: 414px){
       footer{
         background-color: #4D495B;
         clear: both;
         width: 100%;
-        height: 60px;
-        margin-top: 120px;
+        height: 50px;
+        bottom: 0;
+        position: absolute;
       }
 
-
-
-        @media(max-width: 375.5px){
-          footer{
-            background-color: #4D495B;
-            clear: both;
-            width: 100%;
-            height: 60px;
-            margin-top: 56px;
-          }
-
-          btn:not([disabled]):not(.disabled){
-            margin-top: 100px;
-          }
-        }
-
-    @media(max-width: 361px){
-      footer{
-        background-color: #4D495B;
-        clear: both;
-        width: 100%;
-        height: 60px;
-        margin-top: 30px;
-      }
-
-      @media(max-width: 321px){
-        footer{
-          background-color: #4D495B;
-          clear: both;
-          width: 100%;
-          height: 80px;
-          margin-top: 30px;
-        }
-}
+    }
