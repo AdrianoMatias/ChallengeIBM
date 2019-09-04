@@ -1,0 +1,48 @@
+.cadastreSe{
+  text-decoration: none;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 116px;
+}
+
+#erro{
+  border: 2px solid red;
+}
+
+#success{
+  border: 2px solid green;
+}
+
+.tiraLink{
+  text-decoration: none;
+  color: grey;
+}
+
+.tiraLink:hover{
+  text-decoration: none;
+  color: red;
+}
+
+
+@media(max-width: 576px) {
+  #carouselExampleControls{
+    display: none;
+  }
+
+  form{
+    margin-top: 140px;
+  }
+
+  footer{
+    margin-top: 146px;
+  }
+
+  .btn:not([disabled]):not(.disabled){
+    display:  block;
+    margin: 10px auto;
+  }
+}
