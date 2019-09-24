@@ -62,18 +62,18 @@
           <div class="row">
             <div class="col">
             <!-- FORM DE CADASTRO  -->
-            <form name="form" action="login" method="post" onsubmit="return valida(this);">
+            <form name="form" method="post" action="#" onsubmit="return valida(this);">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputAddress2">Usuário</label>
-                    <input type="text" name="rm" class="form-control" id="rm" placeholder="Entre com seu RM."
-                          required onblur="valida('rm');">
+                    <input type="text" class="form-control" id="rm" placeholder="Entre com seu RM."
+                          name="rm" required onblur="valida('rm');">
                   </div>
 
                   <div class="form-group col-md-6">
                     <label for="inputPassword4">Senha</label>
-                    <input type="password" name="senha" class="form-control" id="senha" placeholder="Senha"
-                          required onblur="valida('senha')">
+                    <input type="password" class="form-control" id="senha" placeholder="Senha"
+                          name="senha" required onblur="valida('senha')">
                   </div>
               </div>
 
@@ -81,16 +81,16 @@
                     <div class="row">
                       <div class="col-md-6">
                         <label class="form-check-label">
-                          <a class="tiraLink" href="esqueceu-senha.html">Esqueceu a senha?</a>
+                          <a class="tiraLink" href="esqueceu-senha.html" target="_blank">Esqueceu a senha?</a>
                         </label>
                       </div>
 
                       <div class="col-md-6">
                         <label class="form-check-label" for="gridCheck">
-                            <a class="tiraLink" href="cadastro.html">Cadastre-se</a>
+                            <a class="tiraLink" href="cadastro.html" target="_blank">Cadastre-se</a>
                         </label>
 
-                        <button  id="btn" type="submit" class="btn btn-primary">Entrar</button>
+                        <a id="btnEntrar" href="cursos.html" class="btn btn-primary" onclick="validaBtn('btnEntrar')">Entrar</a>
 
                       </div>
                     </div>

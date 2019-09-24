@@ -17,21 +17,39 @@
   <body>
 
 <!--- Menu ------------------------------------>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="voltar-top"></div> 
+        <nav  class="navbar navbar-expand-lg navbar-light bg-light" >
             <a class="navbar-brand" href="cursos.html"><img class="logo" src="img/Falcon IT-01.png"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="conteudo-matematica.html">Matemática</a>
-                <a class="nav-item nav-link" href="construcao.html">Português</a>
-                <a class="nav-item nav-link" href="construcao.html">Lógica de Programação</a>
-                <a class="nav-item nav-link" href="#">Perfil</a>
-                <a class="nav-item nav-link" href="index.html">Logout</a>
+              
+                <div class="navbar-nav">
+                        <div class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">matemática</a>
+                                       <div class="dropdown-menu">
+                                         <a class="dropdown-item" href="#1grau">Função 1º Grau</a>
+                                         <a class="dropdown-item" href="#startup">Startup</a>
+                                         <a class="dropdown-item" href="#2grau">Função de 2º Grau</a>
+                                         <a class="dropdown-item" href="#temperatura">Temperatura</a>
+                                         <a class="dropdown-item" href="#mol">Mol</a>
+                                         <div class="dropdown-divider"></div>
+                                         
+                                     </div>       
+                                     </div>
+                                 </li> 
+                    
+                    <a class="nav-item nav-link" href="construcao.html">Português</a>
+                    <a class="nav-item nav-link" href="construcao.html">Lógica de Programação</a>
+                    <a class="nav-item nav-link" href="#">Perfil</a>
+                    <a class="nav-item nav-link" href="index.html">Logout</a>
+               
               </div>
-            </div>
+            </div> 
             <a  class="navbar-brand" onclick="return play('chatbot');" href="#"><img src="img/microfone.png"></a>
           </nav>
 
@@ -73,7 +91,9 @@
                 <p>Muito bem! Temos o problema do aluguel da van para resolver. Pense sobre ele, analise e, até o final do capítulo, você terá a resposta.</p>
                 <p>Como início, é importante ressaltar que o conceito de função é verdadeiramente fundamental em matemática. As funções basicamente desempenham o papel de, conhecendo um número, obtermos com o auxílio da função um outro número relacionado ao primeiro por meio de uma “lei”.</p>
                 <p>O índice de massa corporal (IMC) de uma pessoa pode ser calculado por meio da fórmula:</p>
-                <img src="img/1.PNG" id="img_1">
+               <!---------------------------------------------------------------------------------------------------------------------------------------->
+               
+                <img src="img/1.png" id="img_1">
                 <p>Em que <b>M</b> é a massa do indivíduo em quilogramas e <b>K</b> é a altura em metros.</p>
                 <table>
                     <tr bgcolor="#62A8E5">
@@ -81,7 +101,7 @@
                         <td>CLASSIFICAÇÃO</td>
                     </tr>
                     <tr>
-                        <td> 18,5</td>
+                        <td>< 18,5</td>
                         <td>Peso Baixo</td>
                     </tr>
                     <tr bgcolor="#F2E9DB">
@@ -107,7 +127,7 @@
                 </table>
                 <p>Quadro de IMC</p>
                 <p>Observe que o <b>IMC</b> é uma <b>função</b> de duas variáveis, pois seu valor depende das grandezas <b>massa</b> e <b>altura</b> do indivíduo:</p>
-                <p>Todo indivíduo pode obter seu IMC.</p>
+                <p id="1grau">Todo indivíduo pode obter seu IMC.</p>
                 <p>Cada indivíduo tem um único IMC.</p>
                 <p>De forma geral, são as duas características destacadas anteriormente que fazem com que um modelo matemático possa ser chamado de função.</p>
                 <br />
@@ -139,6 +159,10 @@
                 <hr />
                 <p>Há inúmeras situações nas quais os modelos matemáticos obtidos possuem a forma geral y = a.x + b (ou f(x) = a.x + b). Esses modelos são chamados de <b>funções do 1º grau</b>.</p>
                 <p>Neste item do capítulo, vamos estudar as funções do 1º grau e suas aplicações em variados contextos, pois é isso que se espera de um profissional de excelência: a capacidade de interagir em contextos diversos, demonstrando toda a sua versatilidade.</p>
+                
+                 <!-- Botão volta para o inicio -->                
+                 <a type="button" id="voltar-ao-topo" href="#voltar-top" class="btn btn-primary">▲</a>
+                
                 <h3><b>DEFINIÇÃO: UMA FORMALIZAÇÃO DO CONCEITO DE FUNÇÃO DO 1º GRAU</b></h3>
                 <p>Vamos formalizar o conceito de função do <b>1º</b> grau:</p>
                 <p>Denomina-se função polinomial do <b>1º</b> grau toda função f: IR → IR da forma</p>
@@ -489,9 +513,9 @@
                     <p>⇒ 1250.t = 15000 ⇒</p>
                     <p>⇒ t = 15000 / 1250 t = 12</p>
                 <hr />
-                <p>Portanto, estima-se que após 12 anos o valor do veículo será de US$ 13,000.00.</p>
-                <img src="img/9.PNG" id="img_9">
-                <h3>CUSTO, RECEITA, LUCRO E O BREAK EVEN POINT EM UMA STARTUP</h3>
+                <p >Portanto, estima-se que após 12 anos o valor do veículo será de US$ 13,000.00.</p>
+                <img id="startup" src="img/9.PNG" id="img_9">
+                <h3 >CUSTO, RECEITA, LUCRO E O BREAK EVEN POINT EM UMA STARTUP</h3>
                 <p>“GESTÃO FINANCEIRA</p>
                 <p>Ponto de equilíbrio</p>
                 <p>O ponto de equilíbrio é um indicador de segurança do negócio, pois mostra o quanto é necessário vender para que as receitas se igualem às despesas e aos custos.</p>
@@ -586,7 +610,7 @@
                   </tr>
                 </table>
                 <br />
-                <img src="img/10.png">
+                <img id="2grau" src="img/10.png">
                 <br />
                 <h3>Função do 2º grau: Contextos e aplicações</h3>
                 <p>As funções do 2º grau possuem diversas aplicações no nosso dia a dia, especialmente em situações da Biologia, da Fisica, da Administração, da Contabilidade, bem como da Engenharia Civil, entre outras áreas. Com a função do 2º grau, podemos obter o ponto minimo ou máximo de alguma situação analisada e isso é feito por meio de uma representação em curva, formando de parábola. Por exemplo, a trajetoria da bola após o chute do jogador. </p>
@@ -613,8 +637,8 @@
                 <p>Considerando-se a forma geral y = a.x² + b.x + c, dizemos que:</p>
                 <p>Se a > 0, então a parábola possui concavidade voltada para cima:</p>
                 <img src="img/12.png" id="img_12">
-                <p>Se a < 0, então a parábola possui concavidade voltada para baixo: </p>
-                <img src="img/13.png" id="img_13">
+                <p >Se a < 0, então a parábola possui concavidade voltada para baixo: </p>
+                <img id="temperatura" src="img/13.png" id="img_13">
                 <h3>TEMPERATURA DE UMA REAÇÃO QUÍMICA</h3>
                 <p>A temperatura de uma reação química varia ao longo do tempo de reação (em geral, medido em segundos).</p>
                 <p>Vamos considerar a reação química entre alumínio e iodo. O modelo matemático que estima a temperatura de reação ao longo do tempo, nesse caso, é dado por:</p>
@@ -1038,7 +1062,7 @@
                 <p>L(p) = –2000.p² + 32000.p – 56000 ⇒</p>
                 <p>⇒ L(8) = –2000.(8)² + 32000.(8) – 56000 ⇒</p>
                 <p>⇒ L(8) = 72000 ⇒ Lucro máximo de R$ 72.000,00</p>
-                <hr />
+                <hr id="mol" />
                 <p>3) Vamos fazer um esboço do gráfico com apoio do Excel:</p>
                 <img src="img/37.png" id="img_37">
                 <h3><b>CONCENTRAÇÃO MOLECULAR (MOL)</b></h3>
