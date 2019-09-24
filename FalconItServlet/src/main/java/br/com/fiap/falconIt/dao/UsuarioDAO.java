@@ -17,22 +17,12 @@ public class UsuarioDAO {
 		con = Conexao.queroConectar();
 	}
 
-	public Usuario getUser(String rm) throws Exception {
+	public int getUser(String rm, String senha) throws Exception {
 		stmt = con.prepareStatement
-				("select * from AM_USUARIO where RM_USUARIO=?");
+				("select * from AM_USUARIO where RM_USUARIO=? and PW_USUARIO=?");
 		stmt.setString(1, rm); 
-		ResultSet rs = stmt.executeQuery();
-		
-		if(rs.next()) {
-			return new Usuario(
-			rs.getString("NM_USUARIO"),
-			rs.getString("EMAIL_USUARIO"),
-			rs.getString("RM_USUARIO"),
-			rs.getString("PW_USUARIO")
-			);
-		} else {
-			return new Usuario();
-		}
+		stmt.setString(2, senha);
+		return stmt.executeUpdate();
 	} 
 	
 	public int addUser(Usuario u) throws Exception{ 

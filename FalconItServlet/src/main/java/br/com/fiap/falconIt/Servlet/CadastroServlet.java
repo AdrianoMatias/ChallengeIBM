@@ -1,4 +1,4 @@
-package br.com.fiap.falconItServlet;
+package br.com.fiap.falconIt.Servlet;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.fiap.falconIt.bo.UsuarioBO;
 import br.com.fiap.falconIt.entities.Usuario;
 
-@WebServlet("/cadastro")
+@WebServlet(urlPatterns = "/cadastro")
 public class CadastroServlet extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;

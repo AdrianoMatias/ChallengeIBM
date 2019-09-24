@@ -1,4 +1,4 @@
-package br.com.fiap.falconItServlet;
+package br.com.fiap.falconIt.Servlet;
 
 import java.io.IOException;
 
@@ -8,20 +8,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.fiap.falconIt.dao.UsuarioDAO;
+import br.com.fiap.falconIt.bo.UsuarioBO;
 
-@WebServlet("/login")
+@WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet{
-
 	private static final long serialVersionUID = 1L;
-
+	
+	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		UsuarioDAO dao_usu = null;
 		try {
-			dao_usu = new UsuarioDAO();
-			if (dao_usu.getUser(req.getParameter("rm"), 
-					req.getParameter("senha")) == 0) {
-				System.out.println("Usuario não encontrado");
+			UsuarioBO usu_bo = new UsuarioBO();
+			if (usu_bo.validarLogin(req.getParameter("rm"), req.getParameter("senha")) == 0) {
+				System.out.println("Usuario não encontrado"); 
 				req.getRequestDispatcher("cadastro.html").forward(req, resp);
 			} else {
 				System.out.println("Usuario encontrado");
@@ -29,13 +27,6 @@ public class LoginServlet extends HttpServlet{
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				dao_usu.encerrar();
-			} catch (Exception e) {
-				e.printStackTrace();
-			} 
-		}
+		} 
 	}
-
 }

@@ -14,6 +14,12 @@ public class Usuario {
 		this.rm = rm;
 		this.senha = senha;
 	}
+	public Usuario(String rm, String senha) {
+		super();
+		this.rm = rm;
+		this.senha = senha;
+	}
+
 	public Usuario() {
 		super();
 	}
