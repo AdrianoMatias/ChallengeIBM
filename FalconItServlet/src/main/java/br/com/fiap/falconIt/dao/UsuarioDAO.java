@@ -23,7 +23,20 @@ public class UsuarioDAO {
 		stmt.setString(1, rm); 
 		stmt.setString(2, senha);
 		return stmt.executeUpdate();
-	} 
+	}
+	
+	public Usuario getSenha(String email) throws Exception {
+		stmt = con.prepareStatement("select PW_USUARIO where EMAIL_USUARIO=?"); 
+		stmt.setString(1, email); 
+		ResultSet rs = stmt.executeQuery(); 
+		if(rs.next()) {
+			return new Usuario(
+					rs.getString("PW_USUARIO")
+					);
+		} else {
+			return new Usuario();
+		}
+	}
 	
 	public int addUser(Usuario u) throws Exception{ 
 		stmt = con.prepareStatement("INSERT INTO "
@@ -36,7 +49,6 @@ public class UsuarioDAO {
 		stmt.setString(4, u.getSenha());
 		return stmt.executeUpdate();
 	} 
-	
 	public int atualizarUser(String rm) throws Exception {
 		stmt = con.prepareStatement
 				("update AM_USUARIO set NM_USUARIO = ?, EMAIL_USUARIO = ?, "

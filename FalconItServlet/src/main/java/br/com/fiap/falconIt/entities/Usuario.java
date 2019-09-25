@@ -19,7 +19,10 @@ public class Usuario {
 		this.rm = rm;
 		this.senha = senha;
 	}
-
+	public Usuario(String senha) {
+		super(); 
+		this.senha = senha;
+	}
 	public Usuario() {
 		super();
 	}
