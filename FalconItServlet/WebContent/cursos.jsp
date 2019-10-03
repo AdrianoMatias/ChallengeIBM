@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +35,7 @@
 			<div class="navbar-nav">
 				<a class="nav-item nav-link" href="conteudoMatematica.jsp">Matemática</a>
 				<a class="nav-item nav-link" href="construcao.jsp">Português</a> <a
-					class="nav-item nav-link" href="construcao.jsp">Lógica de
+					class="nav-item nav-link" href="construcao2.jsp">Lógica de
 					Programação</a> <a class="nav-item nav-link" href="#">Perfil</a> <a
 					class="nav-item nav-link" href="index.jsp">Logout</a>
 

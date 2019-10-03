@@ -1,4 +1,7 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+    <!DOCTYPE html>
 <html lang="pt">
   <head>
     <!-- Required meta tags -->
@@ -6,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/cadastro.css">
+
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -17,15 +21,17 @@
 
           <!--Menu -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="img/Falcon IT-01.png"></a>
+            <a class="navbar-brand" href="index.jsp"><img class="logo" src="img/Falcon IT-01.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Matemática</a>
-                <a class="nav-item nav-link" href="construcao2.html">Português</a>
-                <a class="nav-item nav-link" href="construcao2.html">Lógica de Programação</a>
+                <a class="nav-item nav-link" href="conteudo-matematica.html">Matemática</a>
+                <a class="nav-item nav-link" href="#">Português</a>
+                <a class="nav-item nav-link" href="#">Lógica de Programação</a>
+                <a class="nav-item nav-link" href="index.jsp">Logout</a>
+
               </div>
             </div>
           </nav>
@@ -60,46 +66,25 @@
     <div class="container">
           <div class="row">
             <div class="col">
-              <!-- FORM DE CADASTRO  -->
-              <form name="form" method="post" action="#" onsubmit="return validacao(this);">
+            <!-- FORM DE CADASTRO  -->
+            <form name="form" method="post" action="esqueceu" onsubmit="return valida(this);">
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputAddress">Nome</label>
-                      <input class="form-control" placeholder="Nome"
-                            name="nome" id="form_name" required autofocus onblur="valida('nome');">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Email</label>
-                      <input class="form-control" id="inputEmail4" name="email" placeholder="Email"
-                           required  onblur="valida('email'); validacaoEmail(form.email);">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                      <label for="inputAddress2">RM</label>
-                      <input class="form-control" placeholder="RM" name="rm"
-                              id="rm" required  onblur="valida('rm');">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                      <label for="inputPassword4">Senha</label>
-                      <input class="form-control" placeholder="Senha" name="senha"
-                            id="senha" required  onblur="valida('senha');">
-
-                    </div>
-
-                      <button id="btn" type="submit" class="btn btn-primary">Cadastrar</button>
-
-
-                      <a class="tiraLink espaco" href="index.html">Voltar para Login</a>
-
-
-                </div>
-
-                  </form>
-                </div>
+                  <div class="form-group col-md-6">
+                    <h1>Esqueceu a senha?</h1>
+                    <br>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Insira seu Email."
+                          name="email" onblur="valida('email');">
+                  </div>
               </div>
-          </div>
+
+              <br>
+              <button type="submit" class="btn btn-primary">Continuar</button>
+
+
+                </form>
+              </div>
+            </div>
+        </div>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -107,9 +92,12 @@
         <p>Falcon IT &copy 2019 Todos os direitos reservados</p>
       </footer>
 
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="validacao.js"></script> -->
-    <script type="text/javascript" src="js/validaCampo.js"></script>
+    <script type="text/javascript" src="js/validaLogin.js"></script>
+    <script type="text/javascript" src="js/validaRM.js"></script>
+
   </body>
 </html>

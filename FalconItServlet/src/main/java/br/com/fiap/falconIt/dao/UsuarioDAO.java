@@ -19,14 +19,14 @@ public class UsuarioDAO {
 
 	public int getUser(String rm, String senha) throws Exception {
 		stmt = con.prepareStatement
-				("select * from AM_USUARIO where RM_USUARIO=? and PW_USUARIO=?");
+				("SELECT * FROM AM_USUARIO WHERE RM_USUARIO=? AND PW_USUARIO=?");
 		stmt.setString(1, rm); 
 		stmt.setString(2, senha);
 		return stmt.executeUpdate();
 	}
 	
 	public Usuario getSenha(String email) throws Exception {
-		stmt = con.prepareStatement("select PW_USUARIO where EMAIL_USUARIO=?"); 
+		stmt = con.prepareStatement("SELECT PW_USUARIO WHERE EMAIL_USUARIO=?"); 
 		stmt.setString(1, email); 
 		ResultSet rs = stmt.executeQuery(); 
 		if(rs.next()) {

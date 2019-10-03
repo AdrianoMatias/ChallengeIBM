@@ -36,7 +36,7 @@ public class EsqueceuServlet extends HttpServlet{
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("joao01.albuquerque@hotmail.com", "");
+				return new PasswordAuthentication("falcon_it2019@hotmail.com", "fiap2019");
 			}
 		});
 		UsuarioDAO usu_dao = null; 
@@ -44,15 +44,15 @@ public class EsqueceuServlet extends HttpServlet{
 		try {
 			usu_dao = new UsuarioDAO();
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("joao01.albuquerque@hotmail.com")); // Remetente
+			message.setFrom(new InternetAddress("falcon_it2019@hotmail.com")); // Remetente
 
 			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email)); // Destinatário(s)
-			message.setSubject("Senha site da Falcon IT");// Assunto
+			message.setSubject("Recuperação de Senha - Falcon IT");// Assunto
 			message.setText("Sua senha do site é: "+usu_dao.getSenha(email));
 			/** Método para enviar a mensagem criada */
 			Transport.send(message);
 
-			System.out.println("Feito!!!");
+			System.out.println("E-mail enviado com sucesso!");
 
 		} catch (MessagingException e) {
 			throw new RuntimeException(e);

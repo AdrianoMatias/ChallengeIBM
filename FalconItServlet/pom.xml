@@ -20,10 +20,13 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.0.1</version>
     </dependency> 
+    <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc6 -->
     <dependency>
     	<groupId>com.oracle</groupId>
     	<artifactId>ojdbc6</artifactId>
     	<version>11.2.0.3</version>
+    	<!-- <scope>system</scope>
+        	<systemPath>C:\Users\ccrod\lib_java\ojdbc6.jar</systemPath> -->
     </dependency> 
     <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
 	<dependency>
@@ -37,5 +40,11 @@
     	<artifactId>activation</artifactId>
     	<version>1.1.1</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
   </dependencies>
 </project>

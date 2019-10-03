@@ -20,10 +20,10 @@ public class LoginServlet extends HttpServlet{
 			UsuarioBO usu_bo = new UsuarioBO();
 			if (usu_bo.validarLogin(req.getParameter("rm"), req.getParameter("senha")) == 0) {
 				System.out.println("Usuario não encontrado"); 
-				req.getRequestDispatcher("cadastro.html").forward(req, resp);
+				req.getRequestDispatcher("cadastro.jsp").forward(req, resp);
 			} else {
 				System.out.println("Usuario encontrado");
-				req.getRequestDispatcher("cursos.html").forward(req, resp);
+				req.getRequestDispatcher("cursos.jsp").forward(req, resp);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
