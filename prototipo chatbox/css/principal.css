@@ -1,0 +1,185 @@
+
+  .chatBox{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    margin: 40px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+  .chat-content{
+    overflow: auto;
+    height: 300px;
+  }
+  .chatBox .card{
+    border-radius: 4px;
+  }
+  .chatBox .card-header{
+    background: #3399ff;
+    border-radius: 10px 10px 0 0;
+  }
+  .header-title{
+    height: 50px;
+    display:flex;
+  }
+  .card-header-title i{
+    font-size: 10px;
+    color: #3399ff;
+    margin-right: 15px;
+    
+  }
+  .title-chat {
+    color: white;
+    margin-top: 15px;
+    margin-left: 13px;
+    font-size: 20px;
+  }
+  
+  .card-header .card-header-title{
+    color: #FFF;
+    margin: 0px;
+  }
+
+  .chat-messages {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .chat-message-group1 .chat-messages{
+    float: left;
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 4px;
+  }
+  .chat-message-group1 .message{
+    float: left;
+    padding: 10px;
+    background: #ecf1f8;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+  }
+  
+  .chat-message-group .chat-messages{
+    float: left;
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  .chat-message-group .message{
+    float: left;
+    padding: 10px;
+    background: #ecf1f8;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+  }
+  .chat-messages .from{
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 11px;
+  }
+  .writer-user .chat-messages{
+    float: right;
+    width: 80%;
+  }
+  .writer-user .chat-messages .message{
+    float: right;
+    background: #3399ff;
+    color: #FFF;
+  }
+  .writer-user .chat-messages .from{
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .chatBox .card-header-icon i{
+    color: #FFF;
+    font-size: 13px;
+  }
+  
+  .outside-box{
+    height: 100px;
+    background: #3399ff;
+    width: 200px;
+    margin: 20px;
+    overflow: auto;
+  }
+  .outside-box .content-insider{
+    height: 300px;
+    background: #3399ff;
+  }
+  
+  .emojiBox{
+    width: 150px;
+    margin: 30px;
+    display: none;
+  }
+  .emojiBox .box{
+    height: 100px;
+    padding: 4px;
+  }
+  
+  .card-header-title img{
+    border-radius: 40px;
+  }
+  form {
+    display: inline-block;
+    padding: 4px;
+    width: 100%;
+  }
+  
+  form > input {
+    border: none
+  }
+  
+  form > button {
+    background: #3399ff;
+    border: none;
+    color: #fff;
+    padding: 4px 10px
+  }
+  
+  .chat-camp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  .chat-camp textarea {
+    width: 90%;
+    resize: none;
+    border-color: #3399ff;
+    border-radius: 10px;
+    outline: none;
+    color: #333;
+    padding: 10px 20px 20px;
+    transition: all 300ms ease;
+  }
+  
+  .chat-camp textarea:focus,
+  .chat-camp textarea:active {
+    border-color: #3399ff;
+    transform: scale(1.01);
+  }
+  
+  .chat-camp button {
+    display: block;
+    margin-left: 7px;
+    background-color: #3399ff;
+    box-shadow: 0 0 2px #333;
+    padding: 0px 5px;
+    border-radius: 10px;
+  }
+  .botao2 {
+    margin-right: 12px;
+  }
+  #contorno{
+    border: solid 1px #3399ff;
+    border-radius: 10px;
+    width: 350px;
+  }
