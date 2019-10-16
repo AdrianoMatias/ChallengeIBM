@@ -1,0 +1,151 @@
+.logo {
+	margin: 10px;
+	width: 40px;
+	height: 50px;
+}
+
+#chatbot {
+	display: none;
+	margin-left: 68%; 
+	margin-top : -220px;
+	position: fixed;
+	z-index: 1;
+	margin-top: -220px;
+}
+
+.box-cabecalho {
+	margin-top: -40px;
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.box {
+	display: block;
+	float: right;
+	margin: 10px 100px;
+	padding-top: 30px;
+	width: 400px;
+	height: 550px;
+	background-color: rgba(8, 139, 247, 0.7);
+	border-radius: 10px;
+}
+
+.chat-container {
+	margin: 5px 0px 0px 10px;
+	width: 380px;
+	height: 365px;
+	background-color: white;
+	border-radius: 10px;
+	color: #363636;
+	font-size: 14px;
+	font-family: verdana;
+	overflow-y: overlay;
+}
+
+.rodape {
+	background-color: rgba(8, 139, 247, 0.9);
+	margin: 10px;
+	width: 94%;
+	background-color: white;
+	border-radius: 10px;
+	bottom: 0;
+}
+
+#exampleFormControlTextarea1 {
+	margin: -15px auto;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.container-chat {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+}
+
+.bot {
+	display: block;
+	background: #3395d6;
+	color: white;
+	float: left;
+	clear: both;
+	margin: 10px 20px 15px 25px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.bot:after {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #3395d6;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+.me {
+	display: block;
+	clear: both;
+	background: #EEE7E0;
+	color: black;
+	float: right;
+	margin: 5px 25px 15px 20px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.me:after {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #EEE7E0;
+	border-right: 0;
+	border-top: 0;
+}
+
+audio {
+	margin: 5px;
+}
+
+.audiome {
+	margin-left: 70px;
+}
+
+.imgBot2 {
+	margin-left: 94%;
+	margin-top: 285px;
+	position: fixed;
+	transition: all 3s;
+	
+}
+.imgBotJump{
+	margin-top: 275px;
+}
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.2);
+}

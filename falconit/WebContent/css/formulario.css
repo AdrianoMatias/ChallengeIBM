@@ -1,0 +1,49 @@
+
+
+.cadastro{
+    width: 100%;
+    height: 200px;
+
+}
+
+.cadastro-rodape{
+    width: 100%;
+    height: 100px;
+
+}
+
+.cadastro-pagamento{
+    display: block;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 150px;
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cad-concluido{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cad-concluido2{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.titulo-cadastro{
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+}
