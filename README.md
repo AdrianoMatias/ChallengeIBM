@@ -1,6 +1,6 @@
 ![capa](https://user-images.githubusercontent.com/47859496/60742007-f0041200-9f41-11e9-8231-8ec07910498a.png)
 # ChallengeIBM
-Site de Nivelamento com chatbot integrado com a API da IBM(Watson), feito em linguagem Java utilizando também JSP, JSTL, CSS3, Javascript e Bootstrap.
+Study system integrated with IBM API (Watson), developed in Java language, using JSP, JSTL, CSS3, Java and Bootstrap.
 
 INTEGRANTES FALCONIT:
 <li>ADRIANO MATIAS DE SOUZA 				          RM: 82508</li>
