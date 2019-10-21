@@ -2,7 +2,8 @@
 # ChallengeIBM
 Study system integrated with IBM API (Watson), developed in Java language, using JSP, JSTL, CSS3, Java and Bootstrap.
 
-INTEGRANTES FALCONIT:
+FOUNDING MEMBERS FALCON IT: 
+
 <li>ADRIANO MATIAS DE SOUZA 				          RM: 82508</li>
 <li>CARLOS CÉSAR RODRIGUES VIEIRA JUNIOR      RM: 82455</li>
 <li>GABRIEL ALVES PEREIRA				              RM: 82804</li>
