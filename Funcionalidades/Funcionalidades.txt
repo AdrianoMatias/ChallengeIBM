@@ -1,0 +1,5 @@
+Neste projeto, o sitema tem as seguintes funcionalidades: 
+
+Funcionalidade input: Realização do cadastro de aluno 
+
+Funcionalidade output: Visualizar perfil com opções de alterar ou excluir o perfil
