@@ -1,0 +1,55 @@
+img {
+  display: block;
+  margin: auto;
+}
+
+table {
+  cellpadding: 10px;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  clear: both;
+}
+
+#chatbot {
+  display: none;
+  margin-left: 80%;
+  margin-top: 100px;
+  position: fixed;
+  z-index: 1;
+}
+
+.mic-pq {
+  display: none;
+}
+
+#voltar-ao-topo {
+  margin-top: 600px;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 1em;
+}
+
+@media (max-width: 850px) {
+  #chatbot {
+    display: none;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: fixed;
+  }
+
+  .mic-pq {
+  }
+}
