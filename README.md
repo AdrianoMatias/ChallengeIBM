@@ -1,6 +1,10 @@
 ![capa](https://user-images.githubusercontent.com/47859496/60742007-f0041200-9f41-11e9-8231-8ec07910498a.png)
 # ChallengeIBM
-Study system integrated with IBM API (Watson), developed in Java language, using JSP, JSTL, CSS3, Java and Bootstrap.
+Sistema de Nivelamento com chatbot integrado, feito para sanar as dúvidas durante a leitura do conteúdo. 
+
+Sistema desenvolvido em linguagem Java, utilizando també JSP,JSTL, CSS3, Javascript e Bootstrap 
+
+Study system integrated with IBM API (Watson), developed in Java language, using JSP, JSTL, CSS3, Javascript and Bootstrap.
 
 FOUNDING MEMBERS FALCON IT: 
 
