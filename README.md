@@ -2,7 +2,7 @@
 # ChallengeIBM
 Sistema de Nivelamento com chatbot integrado, feito para sanar as dúvidas durante a leitura do conteúdo. 
 
-Sistema desenvolvido em linguagem Java, utilizando també JSP,JSTL, CSS3, Javascript e Bootstrap 
+Sistema desenvolvido em linguagem Java, utilizando também JSP,JSTL, CSS3, Javascript e Bootstrap 
 
 Study system integrated with IBM API (Watson), developed in Java language, using JSP, JSTL, CSS3, Javascript and Bootstrap.
 
