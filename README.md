@@ -1,5 +1,5 @@
-![capa](https://user-images.githubusercontent.com/47859496/60742007-f0041200-9f41-11e9-8231-8ec07910498a.png)
 # ChallengeIBM
+![capa](https://user-images.githubusercontent.com/47859496/60742007-f0041200-9f41-11e9-8231-8ec07910498a.png)
 Sistema de Nivelamento com chatbot integrado, feito para sanar as dúvidas durante a leitura do conteúdo. 
 
 Sistema desenvolvido em linguagem Java, utilizando também JSP,JSTL, CSS3, Javascript e Bootstrap 
